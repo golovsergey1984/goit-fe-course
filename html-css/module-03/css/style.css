@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 0px;
 }
 *,
 *::before,
@@ -59,7 +60,7 @@ body {
 
 .link:hover,
 .link:focus {
-  color: red;
+ color: #03a9f4;
 }
 
 .article {
@@ -85,6 +86,7 @@ body {
 
 .section_menu {
   font-size: 14px;
+  text-transform: uppercase;
  
   color: #626262;
   font-family: ubuntu;
