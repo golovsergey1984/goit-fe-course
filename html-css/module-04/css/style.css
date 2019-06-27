@@ -88,7 +88,6 @@ body {
   width: 164px;
   height: 7px;
   background: #1abc9c;
-  vertical-align: middle;
   overflow: hidden;
   margin: 30px auto 92px auto;
 }
@@ -123,6 +122,7 @@ body {
   background-color: #323232;
   text-align: left;
   text-indent: 13px;
+  text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 18px;
