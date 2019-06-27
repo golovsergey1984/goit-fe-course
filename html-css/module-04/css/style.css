@@ -1,0 +1,219 @@
+/* 1. Стили для всего блока */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 0;
+  font-weight: inherit;
+}
+
+body {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+
+/* 2. Стиль для блока: меню */
+
+.logo {
+  margin: 36px auto 0 auto;
+}
+
+.logo li {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: #555252;
+  line-height: 32px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.logo li:hover:first-letter {
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+.menu {
+  margin: 36px auto 0 auto;
+}
+
+.menu li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  list-style: none;
+  color: #0f0101;
+  text-transform: uppercase;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.menu li:hover {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: uppercase;
+  list-style: none;
+  color: #1abc9c;
+}
+
+/* 3. Стиль для оформления Заголовков разделов */
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #555252;
+  text-transform: uppercase;
+  margin: 96px auto 30px 0;
+  text-align: center;
+}
+
+.title span {
+  position: relative;
+}
+
+.title span:after {
+  content: "";
+  display: block;
+  width: 164px;
+  height: 7px;
+  background: #1abc9c;
+  vertical-align: middle;
+  overflow: hidden;
+  margin: 30px auto 92px auto;
+}
+
+
+/* 4. Стиль для блока: Products */
+
+.catalogue {
+  margin: 0 30px 30px 0;
+  width: 255px;
+}
+.catalogue:nth-child(4n + 4) {
+  margin-right: 0;
+}
+
+.box:hover .name {
+  background-color: #1abc9c;
+}
+.box:hover .cost {
+  background-color: #7fd9c7;
+}
+
+.img-product {
+  width: 255px;
+  height: 292px;
+}
+.name {
+  display: inline-block;
+  width: 201px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #323232;
+  text-align: left;
+  text-indent: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: white;
+}
+
+.cost {
+  width: 54px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #8c8c8c;
+  display: inline-block;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: white;
+}
+
+
+/* 5. Стиль для блока: Products */
+
+.img-blog {
+  width: 350px;
+  height: 261px;
+}
+
+.blog {
+  margin-right: 30px;
+  width: 350px;
+}
+.blog:last-child {
+  margin-right: 0;
+}
+
+.blog-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 600;
+  font-size: 18px;
+  color: #555252;
+  line-height: 26px;
+  margin: 12px 0 0 0;
+  text-align: left;
+}
+.blog-title span:after {
+  content: "";
+  display: block;
+  width: 136px;
+  height: 3px;
+  background: #1abc9c;
+  vertical-align: middle;
+  overflow: hidden;
+  margin: 12px 0 23px 0;
+}
+
+.blog-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #555252;
+  display: block;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 23px 0 14px 0;
+}
+
+.button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  width: 160px;
+  height: 52px;
+  background-color: #1abc9c;
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 45px;
+  border-radius: 2px;
+  border: 0;
+}
+
+/* 6. Стиль общий обтекание */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
