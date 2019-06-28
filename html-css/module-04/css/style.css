@@ -16,48 +16,39 @@ body {
 }
 
 
-/* 2. Стиль для блока: меню */
+/* 2.1 Стиль для блока: меню->лого */
 
 .logo {
   margin: 36px auto 0 auto;
+ }
+
+.img-logo {
+  width:78px;
+  height:21px;
 }
 
-.logo li {
+
+/* 2.2 Стиль для блока: меню->навигация */
+li {display: inline-block;}
+
+.a-nav {
   display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  color: #555252;
-  line-height: 32px;
-  list-style: none;
-  text-transform: uppercase;
-}
-
-.logo li:hover:first-letter {
-  color: #1abc9c;
-  font-weight: bold;
-}
-
-.menu {
-  margin: 36px auto 0 auto;
-}
-
-.menu li {
+  text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  display: inline-block;
   font-size: 14px;
   line-height: 32px;
   list-style: none;
   color: #0f0101;
   text-transform: uppercase;
-}
-
-.menu li:not(:last-child) {
   margin-right: 30px;
 }
 
-.menu li:hover {
+.a-nav:not(:last-child) {
+  margin-right: 30px;
+}
+
+.a-nav:hover {
   display: inline-block;
   font-size: 14px;
   line-height: 32px;
@@ -78,11 +69,11 @@ body {
   text-align: center;
 }
 
-.title span {
+.title {
   position: relative;
 }
 
-.title span:after {
+.title::after {
   content: "";
   display: block;
   width: 164px;
@@ -98,6 +89,7 @@ body {
 .catalogue {
   margin: 0 30px 30px 0;
   width: 255px;
+  background-color: #e9f0fd;
 }
 .catalogue:nth-child(4n + 4) {
   margin-right: 0;
@@ -112,7 +104,8 @@ body {
 
 .img-product {
   width: 255px;
-  height: 292px;
+  height: 282px;
+  vertical-align: middle;
 }
 .name {
   display: inline-block;
@@ -167,13 +160,12 @@ body {
   margin: 12px 0 0 0;
   text-align: left;
 }
-.blog-title span:after {
+.blog-title::after {
   content: "";
   display: block;
   width: 136px;
   height: 3px;
   background: #1abc9c;
-  vertical-align: middle;
   overflow: hidden;
   margin: 12px 0 23px 0;
 }
