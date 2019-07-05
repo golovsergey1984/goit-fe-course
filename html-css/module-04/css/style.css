@@ -15,21 +15,21 @@ body {
   margin: 0 auto;
 }
 
-
 /* 2.1 Стиль для блока: меню->лого */
 
 .logo {
   margin: 36px auto 0 auto;
- }
-
-.img-logo {
-  width:78px;
-  height:21px;
 }
 
+.img-logo {
+  width: 78px;
+  height: 21px;
+}
 
 /* 2.2 Стиль для блока: меню->навигация */
-li {display: inline-block;}
+li {
+  display: inline-block;
+}
 
 .a-nav {
   display: inline-block;
@@ -83,13 +83,14 @@ li {display: inline-block;}
   margin: 30px auto 92px auto;
 }
 
-
 /* 4. Стиль для блока: Products */
 
 .catalogue {
   margin: 0 30px 30px 0;
   width: 255px;
+  height: 323px;
   background-color: #e9f0fd;
+  text-align: center;
 }
 .catalogue:nth-child(4n + 4) {
   margin-right: 0;
@@ -102,11 +103,6 @@ li {display: inline-block;}
   background-color: #7fd9c7;
 }
 
-.img-product {
-  width: 255px;
-  height: 282px;
-  vertical-align: middle;
-}
 .name {
   display: inline-block;
   width: 201px;
@@ -120,6 +116,10 @@ li {display: inline-block;}
   font-weight: 900;
   font-size: 18px;
   color: white;
+}
+.con {
+  height: 283px;
+  line-height: 283px;
 }
 
 .cost {
@@ -135,6 +135,10 @@ li {display: inline-block;}
   color: white;
 }
 
+.img-item {
+  display: inline-block;
+  vertical-align: middle;
+ }
 
 /* 5. Стиль для блока: Products */
 
