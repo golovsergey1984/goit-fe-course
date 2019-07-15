@@ -31,6 +31,8 @@ nav {
   left: 0;
   width: 100%;
   z-index: 999;
+  height: 91px;
+  background-color: #ffffff;
 }
 
 .box {
@@ -68,24 +70,23 @@ nav {
   color: #1abc9c;
 }
 
-
 /* Настройки слайдера */
 
 .wrapper-slide {
   height: 602px;
-  width: 1170px;
   overflow: hidden;
   margin: 91px auto 0 auto;
   position: relative;
+  background-color: #e9f0fd;
 }
 
-   /* Слайдер: указатели навигации */
+/* Слайдер: указатели навигации */
 .box-left {
   width: 104px;
   height: 104px;
   background-color: #56a290;
   position: relative;
-  margin-top: 225px;
+  margin: 225px 0 0 30px;
   outline: none;
   border: 0;
   z-index: 2;
@@ -95,6 +96,7 @@ nav {
   width: 104px;
   height: 104px;
   background-color: #1abc9c;
+  opacity: 0.65;
   margin-top: 225px;
   outline: none;
   border: 0;
@@ -121,7 +123,7 @@ nav {
   height: 104px;
   background-color: #56a290;
   position: relative;
-  margin-top: 225px;
+  margin: 225px 30px 0 0;
   outline: none;
   border: 0;
   z-index: 2;
@@ -131,6 +133,7 @@ nav {
   width: 104px;
   height: 104px;
   background-color: #1abc9c;
+  opacity: 0.65;
   margin-top: 225px;
   outline: none;
   border: 0;
@@ -152,18 +155,30 @@ nav {
   -webkit-transform: rotate(315deg);
 }
 
-
-   /* Слайдер: перемещение картинки */
+/* Слайдер: перемещение картинки */
 
 .bg {
   background-image: url("../img/slider/slider_1.png");
   width: 1648 px;
   height: 602px;
+  background-repeat: no-repeat;
+  background-color: #e9f0fd;
+  background-position: center;
   position: absolute;
   left: -215px;
-  right: -215px;
+  right: 0;
   z-index: 0;
   transition: margin 4s ease;
+}
+
+.bg-opacity {
+  background-color: rgba(24, 24, 25, 0.52);
+  position: relative;
+  left: -215;
+  right: 0;
+  width: 1648px;
+  height: 602px;
+  z-index: 0;
 }
 
 .box-left:active ~ .bg {
@@ -175,14 +190,13 @@ nav {
   z-index: 1;
 }
 
-   /* Слайдер: тексти */
+/* Слайдер: тексти */
 .slide-text {
   width: 1110px;
   position: absolute;
-
   top: 207px;
   right: 0;
-  left: 237px;
+  left: 370px;
   bottom: 0;
   text-transform: uppercase;
   color: #ffffff;
@@ -202,14 +216,18 @@ nav {
   margin: 12px auto 0 0;
 }
 
-
 /* Основной раздел */
-.section {
-  width: 1170px;
+.section-wrapper {
   height: 677px;
   background-color: #e9f0fd;
   margin: auto auto;
   padding-bottom: 94px;
+}
+
+.section {
+  width: 1170px;
+  margin: auto auto;
+  overflow: hidden;
 }
 
 /* Основной раздел: заголовок */
@@ -232,7 +250,6 @@ nav {
   background: #1abc9c;
   margin: 30px auto;
 }
-
 
 /* Основной раздел: новая коллекция */
 .wrapper-collection {
@@ -358,15 +375,17 @@ nav {
   background-color: #1abc9c;
 }
 
-
 /* Футтер */
+.fotter-wrapper {
+  background-color: #323232;
+}
+
 .fotter {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
   height: 88px;
-  width: 1170px;
   margin: auto auto;
   background-color: #323232;
   text-align: center;
@@ -377,6 +396,3 @@ nav {
 .green {
   color: #46bfa9;
 }
-
-
-
