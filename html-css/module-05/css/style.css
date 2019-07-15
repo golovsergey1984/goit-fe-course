@@ -73,11 +73,16 @@ nav {
 /* Настройки слайдера */
 
 .wrapper-slide {
-  height: 602px;
-  overflow: hidden;
   margin: 91px auto 0 auto;
-  position: relative;
   background-color: #e9f0fd;
+}
+
+.section-wrapper-img {
+  height: 602px;
+  width: 1170px;
+  margin: auto auto;
+  overflow: hidden;
+ 
 }
 
 /* Слайдер: указатели навигации */
@@ -159,34 +164,30 @@ nav {
 
 .bg {
   background-image: url("../img/slider/slider_1.png");
-  width: 1648 px;
+  width: 1600px;
   height: 602px;
   background-repeat: no-repeat;
-  background-color: #e9f0fd;
-  background-position: center;
-  position: absolute;
-  left: -215px;
-  right: 0;
+  background-position: -215px;
   z-index: 0;
-  transition: margin 4s ease;
+  transition: background-position-x 4s ease;
 }
 
 .bg-opacity {
   background-color: rgba(24, 24, 25, 0.52);
   position: relative;
-  left: -215;
+  left: 0;
   right: 0;
-  width: 1648px;
+  width: 1600px;
   height: 602px;
   z-index: 0;
 }
 
 .box-left:active ~ .bg {
-  margin-left: 215px;
+  background-position-x: 0px;
   z-index: 1;
 }
 .box-right:active ~ .bg {
-  margin-left: -215px;
+  background-position-x: -450px;
   z-index: 1;
 }
 
@@ -196,7 +197,7 @@ nav {
   position: absolute;
   top: 207px;
   right: 0;
-  left: 370px;
+  left: 0;
   bottom: 0;
   text-transform: uppercase;
   color: #ffffff;
@@ -225,7 +226,7 @@ nav {
 }
 
 .section {
-  width: 1170px;
+  width: 1600px;
   margin: auto auto;
   overflow: hidden;
 }
