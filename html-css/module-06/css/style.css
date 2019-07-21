@@ -210,14 +210,15 @@ body {
   height: 545px;
   display: flex;
   flex-direction: column;
-  position: relative; 
+position: relative;
 }
 
 .img-item {
   width: 380px;
   height: 470px;
   background-color: #95e1d3;
-   position: relative;
+/*    position: relative; */
+   position: absolute;
 }
 
 .img {
@@ -303,10 +304,9 @@ margin-left: -10px;
   padding-top: 28px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
- position: absolute;
- top: 490px;
- left: auto;
-right: auto;
+ position: relative;
+ top: 470px;
+
 }
 
 .item-position {
@@ -317,10 +317,9 @@ right: auto;
   padding-top: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 300i;
-  position: absolute;
-  top: 530px;
-  left: auto;
-  right: auto;
+  position: relative;
+top: 470px;
+
 
 
 }
