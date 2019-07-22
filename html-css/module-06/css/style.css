@@ -56,18 +56,23 @@ body {
 
 .nav-item {
   list-style: none;
-  
+  position: relative;
 }
 
 .nav-link {
-  
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: #95e1d3;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  text-align: center;
 }
+
+.nav-link:hover {
+  color: #f38181; 
+} 
 
 .nav-link:after {
   content: "";
@@ -76,16 +81,12 @@ body {
   height: 3px;
   background: #f38181;
   margin-top: 10px;
-  transition: width .5s, left .5s;
-}
+  transition: width .5s, left 0.5s;
+  } 
 
-.nav-link:hover {
-  color: #f38181;
-}
-:hover::after {
+.nav-link:hover::after {
   width: 100%;
-  left:0;
-}
+  }
 
 
 
@@ -141,6 +142,7 @@ body {
   height: 340px;
   display: flex;
   flex-direction: row;
+  justify-content:	space-between;
   flex-wrap: wrap;
   justify-content:	center;
   margin-left: auto;
@@ -153,16 +155,23 @@ body {
   flex-direction: row;
   flex-wrap: none;
   justify-content:	space-between;
+  
   }
 
 .service-icon {
   width: 32px;
   height: 32px;
+  position: relative;
   margin-left: auto;
   margin-right: 22px;
-  
-  
 }
+
+.text-box {display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:	flex-start;}
+
+
 
 .service-title {
   font-size: 14px;
@@ -170,10 +179,9 @@ body {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 1px;
   margin-top: 0;
-  
-}
+ }
 
 .service-text {
   font-size: 15px;
@@ -182,7 +190,7 @@ body {
   margin-top: 15px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
- 
+  margin-top: 15px;
 }
 
 .text {
@@ -192,6 +200,8 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: #999999;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Секция Комманда */
@@ -217,7 +227,6 @@ position: relative;
   width: 380px;
   height: 470px;
   background-color: #95e1d3;
-/*    position: relative; */
    position: absolute;
 }
 
@@ -247,7 +256,7 @@ margin-left: -10px;
   }
 }
 .img-item:hover .img {
-  animation-duration: 0.1s;
+  animation-duration: 0.2s;
   animation-name: move;
   animation-fill-mode: forwards;
 }
@@ -255,13 +264,14 @@ margin-left: -10px;
 .img-item:hover .grad {
   background: linear-gradient(to top, #fce38a, #f38181);
   opacity: 0.9;
-  animation-duration: 0.1s;
+  animation-duration: 0.2s;
   animation-name: move;
   animation-fill-mode: forwards;
 }
 
 .img-item:hover .share-icon {
-  transform: translate(-10px, -10px);
+
+ transform: translate(-10px, -10px); 
   opacity: 1;
 }
 
@@ -269,9 +279,12 @@ margin-left: -10px;
   display: flex;
   flex-direction: row;
   position: absolute;
-  top: 205px;
-  right: 78px;
+  top: 215px;
+  right: 70px;
   opacity: 1;
+  transition-property: transform 0.2s linear; 
+  transition-duration: 0.2s;
+
 }
 
 .share-icon {
@@ -283,9 +296,13 @@ margin-left: -10px;
   opacity: 0;
 }
 
-.share-icon:hover {
-  background-color: #95e1d3;
+.img-item:hover .share{
+  transform: translate(-10px, -10px);
 }
+
+.share-icon:hover{
+background-color: #95e1d3;
+ }
 
 .img-icon {
   position: absolute;
@@ -305,7 +322,7 @@ margin-left: -10px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
  position: relative;
- top: 470px;
+ top: 500px;
 
 }
 
@@ -314,11 +331,10 @@ margin-left: -10px;
   line-height: 24px;
   color: #999999;
   text-align: center;
-  padding-top: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 300i;
   position: relative;
-top: 470px;
+top: 514px;
 
 
 
