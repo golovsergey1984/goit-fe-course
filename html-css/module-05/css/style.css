@@ -23,23 +23,29 @@ html {
   clear: both;
 }
 
+.site-wrapper {
+  width: 1600px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+}
+
 /* Навигация */
 
-nav {
+.nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 1600px;
   z-index: 999;
   height: 91px;
-  background-color: #ffffff;
+  background-color:#ffffff;
 }
 
 .box {
   margin: 38px auto 0 auto;
   width: 1170px;
   overflow: hidden;
-  position: relative;
   background-color: #ffffff;
 }
 
@@ -73,8 +79,15 @@ nav {
 /* Настройки слайдера */
 
 .wrapper-slide {
-  margin: 91px auto 0 auto;
   background-color: #e9f0fd;
+  width: 1600px;
+ left:0;
+ right:0;
+ margin-left:auto;
+ margin-right: auto;
+/*   margin-top: 91px; */
+  box-sizing: border-box;
+
 }
 
 .section-wrapper-img {
@@ -82,6 +95,7 @@ nav {
   width: 1170px;
   margin: auto auto;
   overflow: hidden;
+
  
 }
 
@@ -223,6 +237,7 @@ nav {
   background-color: #e9f0fd;
   margin: auto auto;
   padding-bottom: 94px;
+ 
 }
 
 .section {
@@ -397,3 +412,7 @@ nav {
 .green {
   color: #46bfa9;
 }
+
+@media screen and (max-width:321px){
+  body{width:100px}
+  }
