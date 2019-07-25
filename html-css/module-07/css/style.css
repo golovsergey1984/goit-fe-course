@@ -62,10 +62,7 @@ body {
   margin: 0 auto;
 }
 
-/* .bg-color-menu {
-  background-color: #fff;
-  width: 100%;
-} */
+
 
 /* Хеддер */
 .nav-wrapper {
@@ -74,19 +71,9 @@ body {
   background-color: #fff;
   margin-left: auto;
   margin-right: auto;
-  width: 479px;
+
 }
 
-.fixed {
-position: sticky;
-/*   left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0; */
-/*   margin-right: auto;
-  margin-left: auto; */
-  z-index: 997;
-}
 
 .logo-width {
   width: 455px;
@@ -102,9 +89,8 @@ position: sticky;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 7px;
-  /*     width: 81px;
-    height: 29px;
-    margin-left: 7px; */
+  width: 81px;
+  height: 29px;
 }
 
 .menu {
@@ -114,17 +100,23 @@ position: sticky;
   flex-direction: row;
   justify-content: space-between;
   line-height: 41px;
-
-  /* margin-top: 44px;  */
   list-style: none outside;
-
+  background-color: #fff;
   margin: 0;
   padding: 0;
+
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  padding-top:45px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 997;
 }
 
 .menu-item {
   font-size: 14px;
-  /*  line-height: 14px; */
   color: #222222;
   text-decoration: none;
   text-transform: uppercase;
@@ -170,6 +162,7 @@ position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
 }
 
 .service-item {
@@ -204,6 +197,7 @@ position: sticky;
   text-transform: capitalize;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
+
 }
 .service-item:hover .service-title {
   font-family: Montserrat, sans-serif;
