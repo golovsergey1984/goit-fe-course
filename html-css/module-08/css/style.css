@@ -1,0 +1,275 @@
+/* Общие настройки */
+
+html {
+  box-sizing: border-box;
+  font-size: 0;
+  font-weight: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  min-width: 320px;
+  max-width: 480px;
+}
+
+.conteiner {
+  min-width: 290px;
+  max-width: 450px;
+
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bg-img {
+  width: 100%;
+  height: 541px;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+}
+.description {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* .bg-img {
+    margin:0;
+    padding:0; 
+  background-color: #1a1915;
+  background-image: url("../img/bg/mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; 
+  background-size: cover;
+/   position:fixed;
+  z-index: -1;
+  top:0;
+  left:0; 
+  min-width:100%;
+  min-height:100%; 
+  width: 100%; 
+  height: 541px;
+} */
+
+.ul-item {
+  list-style: none outside;
+  padding: 0;
+  margin: 0;
+  padding-top: 45px;
+  font-size: 14px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.li-nav {
+  width: 86px;
+  height: 32px;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.li-nav:hover {
+  border: 2px solid transparent;
+}
+
+.img-logo {
+  display: none;
+}
+
+.img-logo-mob {
+  margin-top: 100px;
+  width: 180px;
+  height: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  line-height: 36px;
+}
+
+.aside-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.title {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-top: 36px;
+}
+
+.subtitle {
+  width: 100%;
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.btn-find {
+  width: 280px;
+  height: 40px;
+  background-color: #ff4e50;
+  font-size: 14px;
+  line-height: 40px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 18px;
+}
+
+.test {
+  width: 320px;
+  height: 25px;
+  background-color: red;
+}
+.test-2 {
+  width: 768px;
+  height: 25px;
+  background-color: purple;
+}
+.test-3 {
+  width: 1440px;
+  height: 25px;
+  background-color: yellow;
+}
+
+
+
+@media (min-width: 480px) {
+  body {
+    min-width: 480px;
+    max-width: 960px;
+  }
+
+  .bg-img {
+    width: 100%;
+    height: 700px;
+  }
+
+  .nav-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 660px;
+    }
+
+  .ul-item {
+      justify-content: flex-end;
+    }
+  
+    .img-logo-mob {
+      display: none;
+    }
+
+.img-logo {
+      width: 180px;
+      height: 20px;
+      display: block;
+      text-align: left;
+      line-height: 30px;
+      position: relative;
+      top: 6px;
+    }
+
+.container {
+      min-width: 380px;
+      max-width: 860px;
+    }
+.logo-wrapper {
+      width: 490px;
+    }
+
+  .aside-wrapper {
+    width: 495px;
+  }
+
+.title {
+  font-size: 51.97px;
+  margin-top: 223px;
+}
+
+.subtitle {
+  font-size: 23.99px;
+}
+.btn-find {
+  width: 225px;
+  background-color: #ff4e50;
+  font-size: 13.99px;
+  border-radius: 20px;
+  margin-top: 36px;
+}
+
+@media (min-width: 961px) {
+  body {
+    min-width: 961px;
+    max-width: 1440px;
+  }
+  .container {
+    min-width: 461px;
+    max-width: 940px;
+  }
+
+  .nav-wrapper {
+    width: 940px;
+    }
+    .logo-wrapper {
+      width: 760px;
+    }
+ 
+  .img-logo-mob {
+    display: none;
+  }
+  .img-logo {
+    width: 180px;
+    height: 20px;
+    display: block;
+  }
+  .bg-img {
+    width: 100%;
+    height: 700px;
+  }
+  .conteiner {
+    width: 1440px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 51.97px;
+    margin-top: 223px;
+  }
+
+  .subtitle {
+    font-size: 23.99px;
+  }
+  .btn-find {
+    width: 225px;
+    background-color: #ff4e50;
+    font-size: 13.99px;
+    border-radius: 20px;
+    margin-top: 36px;
+  }
+}
