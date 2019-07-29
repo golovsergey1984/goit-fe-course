@@ -17,6 +17,7 @@ body {
 /* Задаем цвет фона обертки*/
 .site-wrapper {
   background-color: white;
+  position: relative;
 }
 
 /* Задаем фоновое изображение */
@@ -25,7 +26,6 @@ body {
   height: 541px;
   background-color: black;
   display: inline-block;
-  position: relative;
 }
 
 /* Выносим вперед и центрируем блок хэддер */
@@ -50,17 +50,18 @@ body {
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 .li-nav {
-  width: 86px;
+  min-width: 86px;
   height: 32px;
-  border: 2px solid white;
+  border: 2px solid transparent;
   border-radius: 15px;
 }
 
 .li-nav:hover {
-  border: 2px solid transparent;
+  border: 2px solid white;
 }
 
 .nav-link {
@@ -79,7 +80,7 @@ body {
 .img-logo-mob {
   margin-top: 100px;
   width: 180px;
-  height: 20px;
+  height: 20px; 
 }
 
 /* Центрируем контент в хэддере */
@@ -138,6 +139,13 @@ body {
   margin-top: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+}
+
+.btn-find:hover {
+  background-color: transparent;
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+  border-radius: 17px; 
 }
 
 
@@ -266,7 +274,7 @@ body {
 .fotter-wrapper {
   text-align: center;
   background-color: white;
-  margin-top: 28px;
+  padding-top: 28px;
   padding-bottom: 57px;
 }
 
@@ -275,11 +283,11 @@ body {
   color: #ff4e50;
   width: 188px;
   height: 36px;
-  border: 2px solid #ff4e50;
-  background-color: transparent;
+  border: none;
+  background-color: #ff4e50;
   border-radius: 17px;
   font-size: 14px;
-  color: #ff4e50;
+  color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -288,13 +296,19 @@ body {
   text-transform: capitalize;
 }
 
+.btn-other:hover {
+  background-color: transparent;
+  color: #ff4e50;
+  border: 2px solid #ff4e50; 
+}
 
 /* Стилизация под расширение 768px */
-@media (min-width: 480px) {
+@media screen and (min-width: 480px) {
   body {
-    min-width: 480px;
-    max-width: 960px;
+    min-width: 462px;
+    max-width: 980px; /* 980px */
   }
+
 
   .bg-img {
     width: 100%;
@@ -308,11 +322,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 660px;
-    min-width: 490;
+    min-width: 470px;
   }
 
   .logo-wrapper {
-    width: 490px;
+    width: 462px; /* 490 */
   }
 
   .img-logo {
@@ -320,7 +334,7 @@ body {
     height: 20px;
     display: block;
     position: relative;
-    top: 6px;
+    top: 3px;
   }
 
   .ul-item {
@@ -358,28 +372,31 @@ body {
   }
 
   .section-wrapper {
-    width: 490px;
+    min-width: 462px; 
+    max-width: 490px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .box-partners {
-    width: 492px;
+    min-width: 462px;
+    max-width: 492px; 
     margin: 0 auto;
   }
 
   .fotter-wrapper {
-    margin-top: 38px;
+    padding-top: 38px;
     padding-bottom: 40px;
   }
 }
 
 /* Стилизация под расширение 1440px */
-@media (min-width: 961px) {
+@media screen and (min-width: 961px) {
   body {
-    min-width: 961px;
-    max-width: 1440px;
+    min-width: 943px; /* 961 */
+    max-width: 1440px; 
   }
+
 
   .nav-wrapper {
     max-width: 940px;
@@ -418,16 +435,20 @@ body {
     margin-top: 36px;
   }
   .section-wrapper {
-    width: 940px;
+    min-width: 940px;
+    max-width: 940px; 
     margin-left: auto;
     margin-right: auto;
   }
   .box-partners {
-    width: 942px;
-    margin: 0 auto;
+ 
+    min-width: 940px;
+    max-width: 940px; 
+    margin-left: auto;
+    margin-right: auto;
   }
   .fotter-wrapper {
-    margin-top: 38px;
+    padding-top: 38px;
     padding-bottom: 72px;
   }
 }
