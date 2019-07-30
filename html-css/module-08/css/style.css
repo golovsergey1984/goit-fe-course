@@ -305,8 +305,9 @@ body {
 /* Стилизация под расширение 768px */
 @media screen and (min-width: 480px) {
   body {
-    min-width: 462px;
-    max-width: 980px; /* 980px */
+    margin-left: -18px;
+    min-width: 480px; /* 480 */
+    max-width: 980px; /* 462px */
   }
 
 
@@ -322,11 +323,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 660px;
-    min-width: 470px;
+    min-width: 470px; /* 470 */
   }
 
   .logo-wrapper {
-    width: 462px; /* 490 */
+    width: 490px; /* 490 */
   }
 
   .img-logo {
@@ -372,14 +373,14 @@ body {
   }
 
   .section-wrapper {
-    min-width: 462px; 
+    min-width: 442px; /* 462 */
     max-width: 490px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .box-partners {
-    min-width: 462px;
+    min-width: 442px; /* 462 */
     max-width: 492px; 
     margin: 0 auto;
   }
@@ -393,8 +394,9 @@ body {
 /* Стилизация под расширение 1440px */
 @media screen and (min-width: 961px) {
   body {
-    min-width: 943px; /* 961 */
-    max-width: 1440px; 
+
+    min-width: 943px; /* 943 */
+    max-width: 1440px; /* 961 */
   }
 
 
