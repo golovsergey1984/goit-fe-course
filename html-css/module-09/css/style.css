@@ -57,7 +57,7 @@ body {
   min-width: 0;
   max-width: 767px;
   box-sizing: border-box;
-  line-height: 32px;
+  line-height: 1px;
 }
 
 .nav-link {
@@ -67,7 +67,7 @@ body {
   border: 2px solid transparent;
   border-radius: 17px;
   font-size: 14px;
-  line-height: 32px;
+  line-height: 28px;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -93,7 +93,7 @@ body {
   top: 0;
   margin-left: auto;
   margin-right: auto;
-  line-height: 32px;
+  line-height: 28px;
 }
 
 .unvisible {
