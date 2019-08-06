@@ -1,0 +1,432 @@
+/* Общие настройки */
+html {
+  box-sizing: border-box;
+  font-size: 0;
+  font-weight: inherit;
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+/* Настройки сетки */
+
+.size /* убираем отступы по краям контейнера */ {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row {
+  justify-content: center;
+}
+
+/* Обоертка сайта */
+.wrapper {
+  min-width: 0;
+  max-width: 767px;
+  background-color: white;
+  margin: 0 auto; /* центрируем сайт по центру окна браузера */
+}
+
+/* Хеддер */
+/* Фон */
+.bg-img {
+  background-color: rgb(14, 14, 14);
+  background-image: url("../img/bg/mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 540px;
+  width: 100%;
+  position: relative;
+  width: auto;
+}
+
+/* Навигация */
+.ul-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+  max-width: 767px;
+  box-sizing: border-box;
+  line-height: 32px;
+}
+
+.nav-link {
+  display: block;
+  width: 86px;
+  height: 32px;
+  border: 2px solid transparent;
+  border-radius: 17px;
+  font-size: 14px;
+  line-height: 32px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.nav-link::first-letter {
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: white;
+  border: 2px solid white;
+  border-radius: 17px;
+}
+
+.img-logo {
+  margin-top: 172px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 32px;
+}
+
+.unvisible {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.headder-title {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 0;
+  padding-right: 0;
+  color: white;
+  font-size: 30px;
+  margin-top: 170px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.headder-subtitle {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 18px;
+  margin-top: 18px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.btn-find {
+  width: 280px;
+  height: 40px;
+  background-color: #ff4e50;
+  font-size: 14px;
+  line-height: 40px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.btn-find::first-letter {
+  text-transform: uppercase;
+}
+
+.btn-find:hover {
+  background-color: transparent;
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+}
+
+/* Основной контент */
+.wrapper-content {
+  min-width: 0;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-title {
+  font-size: 21.98px;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  margin-top: 71px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.content-title::first-letter {
+  text-transform: uppercase;
+}
+
+.box-partner {
+  width: 100%;
+  margin-top: 58px;
+}
+
+.img-partner-1 {
+  background-image: url("../img/Partners/Bradley-Hunter.png");
+  background-position: center center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-status-1 {
+  height: 32px;
+  width: 32px;
+  background-color: #ff4e50;
+  background-image: url("../img/status/tv.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.img-partner-2 {
+  background-image: url("../img/Partners/Heather-Walker.png");
+  background-position: center center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-status-2 {
+  height: 32px;
+  width: 32px;
+  background-color: #1cd7ad;
+  background-image: url("../img/status/cup.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.img-partner-3 {
+  background-image: url("../img/Partners/Lucas-Marsha.png");
+  background-position: center center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-status-3 {
+  height: 32px;
+  width: 32px;
+  background-color: #ffa507;
+  background-image: url("../img/status/bag.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.img-partner-4 {
+  background-image: url("../img/Partners/Bradley-Hunter_2.png");
+  background-position: center center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img-status-4 {
+  height: 32px;
+  width: 32px;
+  background-color: #4e73db;
+  background-image: url("../img/status/plane.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 3px solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.partner-name {
+  font-size: 13.97px;
+  color: #333333;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.partner-description {
+  font-size: 13.97px;
+  color: #666666;
+  text-align: center;
+  margin-top: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/* Футтер */
+.fotter-wrapper {
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 57px;
+}
+
+.btn-other {
+  font-size: 14px;
+  color: #ff4e50;
+  width: 280px;
+  height: 36px;
+  border: none;
+  background-color: #ff4e50;
+  border-radius: 17px;
+  font-size: 14px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.btn-other::first-letter {
+  text-transform: capitalize;
+}
+
+.btn-other:hover {
+  background-color: transparent;
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+}
+
+
+
+@media (min-width: 768px) {
+  .bg-img {
+    background-image: url("../img/bg/tablet.png");
+    height: 700px;
+  }
+  .ul-list {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+
+  .unvisible {
+    display: block;
+    width: 75%;
+  }
+
+  .wrapper {
+    min-width: 738px;
+    max-width: 961px;
+  }
+
+  .btn-find {
+    width: 225px;
+    background-color: #ff4e50;
+    font-size: 13.99px;
+    border-radius: 20px;
+    margin-top: 37px;
+  }
+
+  .wrapper-content {
+    min-width: 492px;
+    max-width: 635px;
+  }
+  .headder-title {
+    font-size: 52px;
+  }
+  .headder-subtitle {
+    font-size: 24px;
+  }
+
+  .fotter-wrapper {
+    padding-top: 38px;
+    padding-bottom: 40px;
+  }
+}
+.btn-other {
+  width: 225px;
+}
+
+
+
+@media (min-width: 992px) {
+  .bg-img {
+    background-image: url("../img/bg/laptop.png");
+    height: 700px;
+  }
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+
+  .wrapper {
+    min-width: 962px;
+    max-width: 1410px;
+  }
+  .ul-list {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  .unvisible {
+    display: block;
+    width: 81.7%;
+  }
+
+  .btn-find {
+    width: 225px;
+    background-color: #ff4e50;
+    font-size: 13.99px;
+    border-radius: 20px;
+    margin-top: 37px;
+  }
+
+  .headder-title {
+    font-size: 52px;
+  }
+  .headder-subtitle {
+    font-size: 24px;
+  }
+
+  .wrapper-content {
+    min-width: 647px;
+    max-width: 940px;
+  }
+  .fotter-wrapper {
+    padding-top: 38px;
+    padding-bottom: 73px;
+  }
+  .btn-other {
+    width: 225px;
+  }
+}
