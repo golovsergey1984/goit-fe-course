@@ -3,13 +3,16 @@ html {
   box-sizing: border-box;
   font-size: 0;
   font-weight: inherit;
-  background-color: black;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background: black ;
+}
+
+.container-fluid {
+  background-color: white;
 }
 
 /* Настройки сетки */
@@ -28,12 +31,19 @@ body {
 .wrapper {
   min-width: 0;
   max-width: 767px;
-  background-color: white;
+  height: auto;
+
   margin: 0 auto; /* центрируем сайт по центру окна браузера */
 }
 
 /* Хеддер */
 /* Фон */
+.bg {
+  background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .bg-img {
   background-color: rgb(14, 14, 14);
   background-image: url("../img/bg/mobile.png");
@@ -42,8 +52,11 @@ body {
   background-position: center center;
   height: 540px;
   width: 100%;
-  position: relative;
-  width: auto;
+  display: inline-block;
+}
+
+.height {
+  height: 540px;
 }
 
 /* Навигация */
@@ -139,6 +152,7 @@ body {
   margin-top: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  position: relative;
 }
 
 .btn-find::first-letter {
@@ -153,10 +167,9 @@ body {
 
 /* Основной контент */
 .wrapper-content {
-  min-width: 0;
-  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  /* background-color: white; */
 }
 
 .content-title {
@@ -167,6 +180,7 @@ body {
   margin-top: 71px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .content-title::first-letter {
@@ -298,11 +312,13 @@ body {
 }
 
 /* Футтер */
-.fotter-wrapper {
+.footer-wrapper {
   text-align: center;
   padding-top: 28px;
   padding-bottom: 57px;
+  background-color: white;
 }
+
 
 .btn-other {
   font-size: 14px;
@@ -328,13 +344,16 @@ body {
   border: 2px solid #ff4e50;
 }
 
-
-
 @media (min-width: 768px) {
   .bg-img {
     background-image: url("../img/bg/tablet.png");
     height: 700px;
   }
+
+  .height {
+    height: 700px;
+  }
+
   .ul-list {
     max-width: 100%;
     justify-content: space-between;
@@ -346,8 +365,8 @@ body {
   }
 
   .wrapper {
-    min-width: 738px;
-    max-width: 961px;
+    min-width: 730px;
+    max-width: 991px;
   }
 
   .btn-find {
@@ -358,10 +377,6 @@ body {
     margin-top: 37px;
   }
 
-  .wrapper-content {
-    min-width: 492px;
-    max-width: 635px;
-  }
   .headder-title {
     font-size: 52px;
   }
@@ -369,7 +384,7 @@ body {
     font-size: 24px;
   }
 
-  .fotter-wrapper {
+  .footer-wrapper {
     padding-top: 38px;
     padding-bottom: 40px;
   }
@@ -378,20 +393,23 @@ body {
   width: 188px;
 }
 
-
-
 @media (min-width: 992px) {
   .bg-img {
     background-image: url("../img/bg/laptop.png");
     height: 700px;
   }
+
+  .height {
+    height: 700px;
+  }
+
   .container-fluid {
     padding: 0;
     margin: 0;
   }
 
   .wrapper {
-    min-width: 962px;
+    min-width: 954px;
     max-width: 1410px;
   }
   .ul-list {
@@ -418,11 +436,7 @@ body {
     font-size: 24px;
   }
 
-  .wrapper-content {
-    min-width: 647px;
-    max-width: 940px;
-  }
-  .fotter-wrapper {
+  .footer-wrapper {
     padding-top: 38px;
     padding-bottom: 73px;
   }
