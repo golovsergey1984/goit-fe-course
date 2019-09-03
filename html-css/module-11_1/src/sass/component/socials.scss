@@ -1,0 +1,52 @@
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  transform: translate (-50%, -50%);
+  opacity: 1;
+
+  &__item {
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    margin-right: 2px;
+    position: relative;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    &:hover {
+      background-color: #f38181;
+    }
+  
+    &:hover .socials__icon {
+      fill: white;
+    }
+  
+}
+&__icon {
+    width: 25px;
+    height: 25px;
+    fill: #f38181;
+  }
+}
+
+
+
+
+
+
+
+
+
