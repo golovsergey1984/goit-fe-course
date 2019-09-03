@@ -1,0 +1,35 @@
+/* 3. Работаем с блоком Service */
+.section__title {
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    &::first-letter {
+        text-transform: uppercase;
+      }
+  }
+  
+
+  
+  .section__subtitle {
+    font-size: 30px;
+    color: #333333;
+    margin-top: 21px;
+    text-align: center;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+
+    &:after {
+        display: block;
+        content: "";
+        width: 60px;
+        height: 3px;
+        background: #f38181;
+        margin: 40px auto 0 auto;
+      }
+  }
+  
