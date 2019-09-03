@@ -49,7 +49,7 @@ max-width: 1200px;
 /* 2. Хеддер */
 /* Задаем фон картинки и градиент */
 .banner {
-/* max-width: 1920px; */
+
 height: 1000px;
   background-image: -webkit-gradient(
       linear,
