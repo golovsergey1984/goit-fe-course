@@ -18,7 +18,7 @@
   &__item {
     width: 56px;
     height: 56px;
-    background-color: #fce38a;
+    background-color: $primary-hover-color;
     margin-right: 2px;
     position: relative;
     opacity: 0;
@@ -27,18 +27,18 @@
     align-items: center;
   
     &:hover {
-      background-color: #f38181;
+      background-color: $secondary-grad-color;
     }
   
     &:hover .socials__icon {
-      fill: white;
+      fill: $primary-white-color;
     }
   
 }
 &__icon {
     width: 25px;
     height: 25px;
-    fill: #f38181;
+    fill: $secondary-grad-color;
   }
 }
 

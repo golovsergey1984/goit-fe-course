@@ -1,7 +1,7 @@
 .employee {
   max-width: 380px;
   height: 470px;
-  background-color: #95e1d3;
+  background-color: $secondary-bg-color;
   position: absolute;
 
   /* Накладываем на фото градиент */
@@ -14,9 +14,7 @@
   }
 
   &__name {
-    font-size: 14px;
-    color: #333333;
-    font-family: 'Montserrat', sans-serif;
+    @include text (14px, $font-primary, $primary-dark-color);
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
@@ -26,9 +24,7 @@
   }
 
   &__position {
-    font-size: 15px;
-    color: #999999;
-    font-family: 'Roboto', sans-serif;
+    @include text (15px, $font-secondary, $secondary-dark-color);
     font-weight: 300;
     text-transform: capitalize;
     text-align: center;
@@ -71,11 +67,11 @@
       linear,
       left bottom,
       left top,
-      from(#fce38a),
-      to(#f38181)
+      from($primary-hover-color),
+      to($secondary-grad-color)
     );
-    background: -o-linear-gradient(bottom, #fce38a, #f38181);
-    background: linear-gradient(to top, #fce38a, #f38181);
+    background: -o-linear-gradient(bottom, $primary-hover-color, $secondary-grad-color);
+    background: linear-gradient(to top, $primary-hover-color, $secondary-grad-color);
     opacity: 0.9;
     -webkit-animation-duration: 0.2s;
     animation-duration: 0.2s;

@@ -1,43 +1,23 @@
 /* Выставляем и стилизируем надписи в Хедер */
 .page-header__title {
-    font-size: 72px;
-    color: white;
+  @include text (72px, $font-title, $primary-white-color);
     margin-top: 164px;
     text-transform: capitalize;
-    font-family: "Kaushan Script", cursive;
     font-weight: 400;
     text-align: center;
     max-width: 100%;
   }
   
   .page-header__subtitle {
-    font-size: 150px;
-    color: white;
+    @include text (150px, $font-primary, $primary-white-color);
     margin-top: 47px;
     text-transform: uppercase;
     text-align: center;
     line-height: 140px;
     max-width: 100%;
-    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     letter-spacing: 0;
   }
   
-  .page-header__btn {
-    min-width: 154px;
-    height: 35px;
-    background: transparent;
-    font-size: 14px;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 3px solid white;
-    margin-top: 125px;
-    margin-bottom: 278px;
 
-    &:hover {
-        background: #fce38a;
-      }
-  }
   

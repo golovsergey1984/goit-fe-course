@@ -465,11 +465,11 @@ body {
 }
 
 .site-navigation__link {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 27px;
-  color: white;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -492,7 +492,7 @@ body {
 .site-navigation__icon {
   width: 18px;
   height: 18px;
-  fill: white;
+  fill: #ffffff;
   position: absolute;
   top: 25%;
 }
@@ -505,10 +505,10 @@ body {
 
 .page-header__title {
   font-size: 72px;
-  color: white;
+  font-family: "Kaushan Script", cursive;
+  color: #ffffff;
   margin-top: 164px;
   text-transform: capitalize;
-  font-family: "Kaushan Script", cursive;
   font-weight: 400;
   text-align: center;
   max-width: 100%;
@@ -516,13 +516,13 @@ body {
 
 .page-header__subtitle {
   font-size: 150px;
-  color: white;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
   margin-top: 47px;
   text-transform: uppercase;
   text-align: center;
   line-height: 140px;
   max-width: 100%;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   letter-spacing: 0;
 }
@@ -532,11 +532,11 @@ body {
   height: 35px;
   background: transparent;
   font-size: 14px;
-  color: white;
   font-family: "Montserrat", sans-serif;
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
-  border: 3px solid white;
+  border: 3px solid #ffffff;
   margin-top: 125px;
   margin-bottom: 278px;
 }
@@ -549,9 +549,9 @@ body {
 
 .section__title {
   font-size: 24px;
+  font-family: "Kaushan Script", cursive;
   color: #333333;
   text-align: center;
-  font-family: "Kaushan Script", cursive;
   font-weight: 400;
 }
 
@@ -561,10 +561,10 @@ body {
 
 .section__subtitle {
   font-size: 30px;
+  font-family: "Kaushan Script", cursive;
   color: #333333;
   margin-top: 21px;
   text-align: center;
-  font-family: "Kaushan Script", cursive;
   font-weight: 400;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -605,19 +605,19 @@ body {
 
 .service__title {
   font-size: 14px;
+  font-family: "Montserrat", sans-serif;
   color: #333333;
   text-transform: uppercase;
   word-wrap: break-word;
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
 
 .service__text {
   font-size: 15px;
+  font-family: "Roboto", sans-serif;
   color: #999999;
   line-height: 24px;
   word-wrap: break-word;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin-top: 17px;
   margin-bottom: 90px;
@@ -648,8 +648,8 @@ body {
 
 .employee__name {
   font-size: 14px;
+  font-family: "Montserrat", sans-serif;
   color: #333333;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
@@ -660,8 +660,8 @@ body {
 
 .employee__position {
   font-size: 15px;
+  font-family: "Roboto", sans-serif;
   color: #999999;
-  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   text-transform: capitalize;
   text-align: center;
@@ -776,7 +776,7 @@ body {
 }
 
 .socials__item:hover .socials__icon {
-  fill: white;
+  fill: #ffffff;
 }
 
 .socials__icon {
@@ -798,15 +798,15 @@ body {
   top: 584px;
 }
 
-.footer-text {
+.footer__text {
   font-size: 14px;
-  color: #333333;
   font-family: "Montserrat", sans-serif;
+  color: #333333;
   font-weight: 400;
   line-height: 60px;
 }
 
-.footer-text__text--color {
+.footer__text--color {
   color: #f38181;
 }
 
@@ -818,25 +818,25 @@ body {
   width: 228px;
   height: 38px;
   font-size: 15px;
-  color: black;
+  font-family: "Roboto", sans-serif;
+  color: #333333;
   border: 1px solid #cccccc;
   outline: none;
   padding-left: 13px;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
 .footer__btn {
   width: 150px;
   height: 38px;
-  color: white;
-  background-color: #95e1d3;
   font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  background-color: #95e1d3;
   border: none;
   outline: none;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   box-shadow: none;
 }
@@ -846,46 +846,43 @@ body {
 }
 
 input[type="email"]::-webkit-input-placeholder {
-  font-size: 15px;
-  color: #cccccc;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 input[type="email"]::-moz-placeholder {
   font-size: 15px;
+  font-family: "Roboto", sans-serif;
   color: #cccccc;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 input[type="email"]:-ms-input-placeholder {
   font-size: 15px;
+  font-family: "Roboto", sans-serif;
   color: #cccccc;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 input[type="email"]::-ms-input-placeholder {
   font-size: 15px;
+  font-family: "Roboto", sans-serif;
   color: #cccccc;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 input[type="email"]::placeholder {
   font-size: 15px;
+  font-family: "Roboto", sans-serif;
   color: #cccccc;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: italic;
 }
@@ -897,8 +894,6 @@ input[type="email"]:valid:not(:placeholder-shown) {
 input[type="email"]:invalid:not(:placeholder-shown) {
   box-shadow: 0 0 0 1px red;
 }
-
-/* Коммент */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
   .banner {

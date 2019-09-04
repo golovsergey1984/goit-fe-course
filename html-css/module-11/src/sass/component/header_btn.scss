@@ -1,0 +1,15 @@
+  .page-header__btn {
+    min-width: 154px;
+    height: 35px;
+    background: transparent;
+    @include text (14px, $font-primary, $primary-white-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid $primary-white-color;
+    margin-top: 125px;
+    margin-bottom: 278px;
+
+    &:hover {
+        background: $primary-hover-color;
+      }
+  }

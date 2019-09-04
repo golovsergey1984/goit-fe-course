@@ -5,32 +5,28 @@
     &--icon {
       width: 32px;
       height: 32px;
-      fill: #95e1d3;
+      fill: $secondary-bg-color;
       text-align: right;
       margin-left: auto;
       margin-right: auto;
       display: block;
       &:hover {
-        fill: #fce38a;
+        fill: $primary-hover-color;
       }
     }
   }
   
   .service__title {
-    font-size: 14px;
-    color: #333333;
+    @include text (14px, $font-primary, $primary-dark-color);
     text-transform: uppercase;
     word-wrap: break-word;
-    font-family: "Montserrat", sans-serif;
     font-weight: 400;
   }
   
   .service__text {
-    font-size: 15px;
-    color: #999999;
+    @include text (15px, $font-secondary, $secondary-dark-color);
     line-height: 24px;
     word-wrap: break-word;
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
     margin-top: 17px;
     margin-bottom: 90px;
