@@ -11,7 +11,7 @@
   text-transform: uppercase;
 
   &:hover {
-    @include text ($primary-hover-color);
+    @include text (14px, $font-primary, $primary-hover-color);
     text-decoration: none;
     &:after {
       content: '';
